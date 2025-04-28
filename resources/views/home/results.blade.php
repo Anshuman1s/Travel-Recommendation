@@ -535,8 +535,9 @@
                         @foreach($destinations as $destination)
                     <div class="destination-card floating-element delay-{{ $loop->iteration }}">
                         <div class="cost-badge">
-                            <i class="fas fa-dollar-sign mr-1"></i>
-                            {{ number_format($destination['cost'], 0) }}
+                            <!-- <i class="fas fa-rupee-sign mr-1"></i>
+                            {{ number_format($destination['cost'], 0) }} -->
+                             <h2>Ticket Available</h2>
                         </div>
                         <img src="{{ $destination['image'] }}" class="destination-image w-full" alt="{{ $destination['name'] }}">
                         <div class="destination-overlay">
@@ -550,10 +551,10 @@
                                             @endforeach
                                         </div>
                             <div class="destination-stats">
-                                <div class="stat-item">
+                                <!-- <div class="stat-item">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span>7 days</span>
-                                    </div>
+                                    </div> -->
                                 <div class="stat-item">
                                     <i class="fas fa-star"></i>
                                     <span>4.8/5</span>
